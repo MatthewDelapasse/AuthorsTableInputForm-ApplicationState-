@@ -1,4 +1,8 @@
-﻿using System;
+﻿/* Matthew Delapasse
+ * 7/21/2021
+ * This is Example 5-4. The Authors Table Input Form can operate in one of three states: View state, Add state, or Edit State
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
