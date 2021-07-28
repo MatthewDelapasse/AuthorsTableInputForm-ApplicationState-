@@ -114,7 +114,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnPrevious.TabIndex = 6;
             this.btnPrevious.Text = "<= Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnPrevious_Click);
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
@@ -125,7 +125,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnNext.TabIndex = 7;
             this.btnNext.Text = "Next =>";
             this.btnNext.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnNext_Click);
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnEdit
             // 
@@ -136,7 +136,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "&Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnEdit_Click);
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -147,7 +147,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "&Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -158,7 +158,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnCancel_Click);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnAddNew
             // 
@@ -169,7 +169,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnAddNew.TabIndex = 11;
             this.btnAddNew.Text = "&Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnAddNew_Click);
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
             // btnDelete
             // 
@@ -180,7 +180,7 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            this.Click += new System.EventHandler(this.btnDelete_Click);
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnDone
             // 
@@ -216,10 +216,10 @@ namespace AuthorsTableInputForm_ApplicationState_
             this.Name = "frmAuthors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authors";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAuthors_FormClosing);
+            this.Load += new System.EventHandler(this.frmAuthors_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-            this.Load += new System.EventHandler(this.frmAuthors_Load);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAuthors_FormClosing);
 
         }
 

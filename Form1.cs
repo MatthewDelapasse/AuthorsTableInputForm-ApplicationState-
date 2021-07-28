@@ -33,7 +33,7 @@ namespace AuthorsTableInputForm_ApplicationState_
         private void frmAuthors_Load(object sender, EventArgs e)
         {
             //connect to the books database
-            string fullfile = Path.GetFullPath("SQLBooksDB");
+            string fullfile = Path.GetFullPath("SQLBooksDB.mdf");
             booksConnection = new SqlConnection("Data Source=.\\SQLEXPRESS; AttachDbFilename=" + fullfile + ";Integrated Security=True; Connect Timeout=30; User Instance=True");
             booksConnection.Open();
 
@@ -110,12 +110,10 @@ namespace AuthorsTableInputForm_ApplicationState_
             MessageBox.Show("Record saved.", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
             SetState("View");
         }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             SetState("View");
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DialogResult response;
@@ -125,7 +123,6 @@ namespace AuthorsTableInputForm_ApplicationState_
                 return;
             }
         }
-
         private void SetState(string appState)
         {
             switch (appState) 
